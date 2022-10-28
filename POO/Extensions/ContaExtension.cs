@@ -6,7 +6,7 @@ namespace POO.Extensions
     {
         public static int VerificaSaldoFuturo(this Conta conta)
         {
-            return conta.Saldo * 10;
+            return conta.Saldo;
         }
     }
 }

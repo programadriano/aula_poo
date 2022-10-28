@@ -5,14 +5,12 @@
         public Cliente(string nome, int idade)
         {
             Nome = nome;
-            Idade = idade;
-            Conta = new Conta();
+            Idade = idade;          
         }
 
         #region [propriedades]
         public string Nome { get; private set; }
         public int Idade { get; private set; }
-        public Conta Conta { get; set; }
         #endregion
 
     }

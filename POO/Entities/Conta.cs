@@ -2,56 +2,38 @@
 
 namespace POO.Entities
 {
-    public class Conta
+    public abstract class Conta
     {
-        public Conta(string nome)
+        public Conta()
         {
-            Nome = nome;
             NumeroDaConta = Guid.NewGuid();
             Saldo = 0;
         }
 
 
         #region [Propriedades]    
-        public string Nome { get; set; }
         private Guid NumeroDaConta { get; set; }
-        public int Saldo { get; private set; }
+        public int Saldo { get; protected set; }
         public TipoDeConta TipoDeConta { get; set; }
-
+        public abstract int AplicaJuros { get; set; }
+        public Cliente Cliente { get; set; }
         #endregion
 
-        #region [Metodos] 
         public Guid RetornarNumeroConta()
         {
             return NumeroDaConta;
         }
 
-        public void Depositar(int valor)
-        {
-            Saldo += valor;
-            // return $"Valor {valor} depositado com sucesso!";
-        }
+        #region [Contratos] 
+        public abstract void Depositar(int valor);
 
-        public void Sacar(int valor)
-        {
-            if (Saldo > valor)
-            {
-                Saldo -= valor;
-            }
-        }
+        public abstract void Sacar(int valor);
 
-        public void Transferir(Conta contaDestino, int valor)
-        {
+        public abstract void Transferir(Conta contaDestino, int valor);        
 
-            if (Saldo > valor)
-            {
-                Saldo -= valor;
-                contaDestino.Depositar(valor);
-            }
-
-
-        }
         #endregion
 
+
     }
+
 }
