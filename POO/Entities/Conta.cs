@@ -1,23 +1,26 @@
-﻿namespace POO.Entities
+﻿using POO.Entities.Enums;
+
+namespace POO.Entities
 {
     public class Conta
     {
-        public Conta(string titular)
+        public Conta(string nome)
         {
-            Titular = titular;
+            Nome = nome;
             NumeroDaConta = Guid.NewGuid();
             Saldo = 0;
         }
 
-        #region [Propriedades]
-        public string Titular { get; set; }
 
+        #region [Propriedades]    
+        public string Nome { get; set; }
         private Guid NumeroDaConta { get; set; }
-
         public int Saldo { get; private set; }
+        public TipoDeConta TipoDeConta { get; set; }
+
         #endregion
 
-        #region [Metodos]
+        #region [Metodos] 
         public Guid RetornarNumeroConta()
         {
             return NumeroDaConta;
@@ -34,7 +37,7 @@
             if (Saldo > valor)
             {
                 Saldo -= valor;
-            }        
+            }
         }
 
         public void Transferir(Conta contaDestino, int valor)
@@ -44,12 +47,11 @@
             {
                 Saldo -= valor;
                 contaDestino.Depositar(valor);
-            }        
+            }
 
-          
+
         }
         #endregion
-
 
     }
 }

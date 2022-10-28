@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tadri\\source\\repos\\fiap\\aulas\\FIAPPOO\\POO\\POO.csproj": {}
+    "C:\\Users\\tadri\\source\\repos\\FIAP\\aulas\\FIAPPOO\\POO\\POO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tadri\\source\\repos\\fiap\\aulas\\FIAPPOO\\POO\\POO.csproj": {
+    "C:\\Users\\tadri\\source\\repos\\FIAP\\aulas\\FIAPPOO\\POO\\POO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tadri\\source\\repos\\fiap\\aulas\\FIAPPOO\\POO\\POO.csproj",
+        "projectUniqueName": "C:\\Users\\tadri\\source\\repos\\FIAP\\aulas\\FIAPPOO\\POO\\POO.csproj",
         "projectName": "POO",
-        "projectPath": "C:\\Users\\tadri\\source\\repos\\fiap\\aulas\\FIAPPOO\\POO\\POO.csproj",
+        "projectPath": "C:\\Users\\tadri\\source\\repos\\FIAP\\aulas\\FIAPPOO\\POO\\POO.csproj",
         "packagesPath": "C:\\Users\\tadri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tadri\\source\\repos\\fiap\\aulas\\FIAPPOO\\POO\\obj\\",
+        "outputPath": "C:\\Users\\tadri\\source\\repos\\FIAP\\aulas\\FIAPPOO\\POO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tadri\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,24 +3,30 @@
 
 using POO.Entities;
 
-var conta = new Conta("Sirius Black");
-//conta.Depositar(1000);
-conta.Sacar(1000);
 
 
-Console.WriteLine($"A conta titular: {conta.Titular} numero: {conta.RetornarNumeroConta()} foi criada corretamente com o saldo: {conta.Saldo}");
+var contaPF = new ContaPF("Sirius Black");
+contaPF.Depositar(1000);
+
+var contaPJ = new ContaPJ("Harry Potter");
+contaPJ.Depositar(1000);
+
+//var cliente1 = new Cliente("Sirius Black", 50);
+//cliente1.Conta.TipoDeConta = POO.Entities.Enums.TipoDeConta.ContaPJ;
+//cliente1.Conta.Depositar(1000);
+
+//Console.WriteLine($"A conta titular: {cliente1.Nome} tipo de conta {cliente1.Conta.TipoDeConta} numero: {cliente1.Conta.RetornarNumeroConta()} foi criada corretamente com o saldo: {cliente1.Conta.VerificaSaldoFuturo()}");
+
+//var contaB = new Cliente("Harry Potter", 30);
+//contaB.Conta.TipoDeConta = POO.Entities.Enums.TipoDeConta.ContaPF;
+
+//Console.WriteLine($"A conta titular: {contaB.Nome} tipo de conta {contaB.Conta.TipoDeConta} numero: {contaB.Conta.RetornarNumeroConta()} foi criada corretamente com o saldo: {contaB.Conta.VerificaSaldoFuturo()}");
 
 
-var contaB = new Conta("Harry Potter");
+//cliente1.Conta.Transferir(contaB.Conta, 600);
 
-
-Console.WriteLine($"A conta titular: {contaB.Titular} numero: {contaB.RetornarNumeroConta()} foi criada corretamente com o saldo: {contaB.Saldo}");
-
-
-conta.Transferir(contaB, 600);
-
-Console.WriteLine($"Depois da transferencia Sirius: {conta.Saldo}");
-Console.WriteLine($"Depois da transferencia Harry: {contaB.Saldo}");
+//Console.WriteLine($"Depois da transferencia Sirius: {cliente1.Conta.VerificaSaldoFuturo()}");
+//Console.WriteLine($"Depois da transferencia Harry: {contaB.Conta.VerificaSaldoFuturo()}");
 
 
 
