@@ -10,7 +10,6 @@ namespace POO.Entities
             Saldo = 0;
         }
 
-
         #region [Propriedades]    
         private Guid NumeroDaConta { get; set; }
         public int Saldo { get; protected set; }
@@ -29,7 +28,7 @@ namespace POO.Entities
 
         public abstract void Sacar(int valor);
 
-        public abstract void Transferir(Conta contaDestino, int valor);        
+        public abstract void Transferir(Conta contaDestino, int valor);
 
         #endregion
 

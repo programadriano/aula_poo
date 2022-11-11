@@ -7,6 +7,12 @@ using POO.Extensions;
 var contaPF = new ContaPF();
 contaPF.Depositar(1000);
 
+
+var listaGenerica = new List<string>();
+listaGenerica.Add("ss");
+
+
+
 Console.WriteLine($"contaPF saldo: {contaPF.VerificaSaldoFuturo()}");
 
 contaPF.Sacar(1500);

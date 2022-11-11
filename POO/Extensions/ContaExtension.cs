@@ -8,5 +8,10 @@ namespace POO.Extensions
         {
             return conta.Saldo;
         }
+
+        public static int AdicionarSaldo(this Conta conta)
+        {
+            return conta.Saldo + 10;
+        }
     }
 }
